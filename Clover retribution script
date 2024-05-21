@@ -1,0 +1,677 @@
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+
+local Window = Rayfield:CreateWindow({
+   Name = "ðŸ”¥ Example Script Hub | Game ðŸ”«",
+   LoadingTitle = "ðŸ”« Gun Simulator ðŸ’¥",
+   LoadingSubtitle = "by 1_F0",
+   ConfigurationSaving = {
+      Enabled = false,
+      FolderName = nil, -- Create a custom folder for your hub/game
+      FileName = "Example Hub"
+   },
+   Discord = {
+      Enabled = false,
+      Invite = "noinvitelink", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ABCD would be ABCD
+      RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+   },
+   KeySystem = false, -- Set this to true to use our key system
+   KeySettings = {
+      Title = "Key | Youtube Hub",
+      Subtitle = "Key System",
+      Note = "Key In Discord Server",
+      FileName = "YoutubeHubKey1", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
+      SaveKey = false, -- The user's key will be saved, but if you change the key, they will be unable to use your script
+      GrabKeyFromSite = true, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+      Key = {"https://pastebin.com/raw/AtgzSPWK"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
+   }
+})
+
+local TPTab = Window:CreateTab("ðŸ Teleports", nil) -- Title, Image
+
+local Button1 = TPTab:CreateButton({
+   Name = "Capital",
+   Callback = function()
+                local teleport_table = {
+        location1 = Vector3.new(2726.5263671875, 169.74996948242188, 2206.947998046875)
+    }
+    
+    local tween_s = game:GetService('TweenService')
+    local tweeninfo = TweenInfo.new(1,Enum.EasingStyle.Linear)
+    
+    local lp = game.Players.LocalPlayer
+    
+    function bypass_teleport(v)
+        if lp.Character and
+            lp.Character:FindFirstChild('HumanoidRootPart') then
+            local cf = CFrame.new(v)
+            local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+            a:Play()
+            a.Completed:Wait()
+            print('Teleported to Sphere Location!')
+        end
+    end
+    
+    bypass_teleport(teleport_table.location1)
+   end,
+})
+
+local Button2 = TPTab:CreateButton({
+   Name = "Near Capital",
+   Callback = function()
+                            local teleport_table = {
+        location1 = Vector3.new(2183.022216796875, 88.25039672851562, 1375.37451171875)
+    }
+    
+    local tween_s = game:GetService('TweenService')
+    local tweeninfo = TweenInfo.new(1,Enum.EasingStyle.Linear)
+    
+    local lp = game.Players.LocalPlayer
+    
+    function bypass_teleport(v)
+        if lp.Character and
+            lp.Character:FindFirstChild('HumanoidRootPart') then
+            local cf = CFrame.new(v)
+            local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+            a:Play()
+            a.Completed:Wait()
+            print('Teleported to Sphere Location!')
+        end
+    end
+    
+    bypass_teleport(teleport_table.location1)
+   end,
+})
+
+local Button3 = TPTab:CreateButton({
+   Name = "Initial 1",
+   Callback = function()
+                            local teleport_table = {
+        location1 = Vector3.new(1497.1395263671875, 73.25039672851562, 438.64654541015625)
+    }
+    
+    local tween_s = game:GetService('TweenService')
+    local tweeninfo = TweenInfo.new(1,Enum.EasingStyle.Linear)
+    
+    local lp = game.Players.LocalPlayer
+    
+    function bypass_teleport(v)
+        if lp.Character and
+            lp.Character:FindFirstChild('HumanoidRootPart') then
+            local cf = CFrame.new(v)
+            local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+            a:Play()
+            a.Completed:Wait()
+            print('Teleported to Sphere Location!')
+        end
+    end
+    
+    bypass_teleport(teleport_table.location1)
+   end,
+})
+
+local Button5 = TPTab:CreateButton({
+   Name = "Initial 2",
+   Callback = function()
+                local teleport_table = {
+        location1 = Vector3.new(1547.1978759765625, 78.25051879882812, 139.14169311523438)
+    }
+    
+    local tween_s = game:GetService('TweenService')
+    local tweeninfo = TweenInfo.new(1,Enum.EasingStyle.Linear)
+    
+    local lp = game.Players.LocalPlayer
+    
+    function bypass_teleport(v)
+        if lp.Character and
+            lp.Character:FindFirstChild('HumanoidRootPart') then
+            local cf = CFrame.new(v)
+            local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+            a:Play()
+            a.Completed:Wait()
+            print('Teleported to Sphere Location!')
+        end
+    end
+    
+    bypass_teleport(teleport_table.location1)
+   end,
+})
+
+local Button6 = TPTab:CreateButton({
+   Name = "Red Boss 1",
+   Callback = function()
+                            local teleport_table = {
+        location1 = Vector3.new(1048.341064453125, 91.62541198730469, 1223.5380859375)
+    }
+    
+    local tween_s = game:GetService('TweenService')
+    local tweeninfo = TweenInfo.new(1,Enum.EasingStyle.Linear)
+    
+    local lp = game.Players.LocalPlayer
+    
+    function bypass_teleport(v)
+        if lp.Character and
+            lp.Character:FindFirstChild('HumanoidRootPart') then
+            local cf = CFrame.new(v)
+            local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+            a:Play()
+            a.Completed:Wait()
+            print('Teleported to Sphere Location!')
+        end
+    end
+    
+    bypass_teleport(teleport_table.location1)
+   end,
+})
+
+local Button7 = TPTab:CreateButton({
+   Name = "Red Boss 2",
+   Callback = function()
+                local teleport_table = {
+        location1 = Vector3.new(844.98193359375, 72.25041198730469, 1238.2119140625)
+    }
+    
+    local tween_s = game:GetService('TweenService')
+    local tweeninfo = TweenInfo.new(1,Enum.EasingStyle.Linear)
+    
+    local lp = game.Players.LocalPlayer
+    
+    function bypass_teleport(v)
+        if lp.Character and
+            lp.Character:FindFirstChild('HumanoidRootPart') then
+            local cf = CFrame.new(v)
+            local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+            a:Play()
+            a.Completed:Wait()
+            print('Teleported to Sphere Location!')
+        end
+    end
+    
+    bypass_teleport(teleport_table.location1)
+   end,
+})
+
+local Button8 = TPTab:CreateButton({
+   Name = "Desert Cave",
+   Callback = function()
+                            local teleport_table = {
+        location1 = Vector3.new(-85.34852600097656, -70.74937438964844, 34.436283111572266)
+    }
+    
+    local tween_s = game:GetService('TweenService')
+    local tweeninfo = TweenInfo.new(1,Enum.EasingStyle.Linear)
+    
+    local lp = game.Players.LocalPlayer
+    
+    function bypass_teleport(v)
+        if lp.Character and
+            lp.Character:FindFirstChild('HumanoidRootPart') then
+            local cf = CFrame.new(v)
+            local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+            a:Play()
+            a.Completed:Wait()
+            print('Teleported to Sphere Location!')
+        end
+    end
+    
+    bypass_teleport(teleport_table.location1)
+   end,
+})
+
+local Button9 = TPTab:CreateButton({
+   Name = "D-Village Rock",
+   Callback = function()
+                local teleport_table = {
+        location1 = Vector3.new(-373.0913391113281, 105.62539672851562, 1388.69580078125)
+    }
+    
+    local tween_s = game:GetService('TweenService')
+    local tweeninfo = TweenInfo.new(1,Enum.EasingStyle.Linear)
+    
+    local lp = game.Players.LocalPlayer
+    
+    function bypass_teleport(v)
+        if lp.Character and
+            lp.Character:FindFirstChild('HumanoidRootPart') then
+            local cf = CFrame.new(v)
+            local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+            a:Play()
+            a.Completed:Wait()
+            print('Teleported to Sphere Location!')
+        end
+    end
+    
+    bypass_teleport(teleport_table.location1)
+   end,
+})
+
+local Button10 = TPTab:CreateButton({
+   Name = "D-Village 1",
+   Callback = function()
+                            local teleport_table = {
+        location1 = Vector3.new(-583.0599975585938, 99.40194702148438, 1135.913818359375)
+    }
+    
+    local tween_s = game:GetService('TweenService')
+    local tweeninfo = TweenInfo.new(1,Enum.EasingStyle.Linear)
+    
+    local lp = game.Players.LocalPlayer
+    
+    function bypass_teleport(v)
+        if lp.Character and
+            lp.Character:FindFirstChild('HumanoidRootPart') then
+            local cf = CFrame.new(v)
+            local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+            a:Play()
+            a.Completed:Wait()
+            print('Teleported to Sphere Location!')
+        end
+    end
+    
+    bypass_teleport(teleport_table.location1)
+   end,
+})
+
+local Button11 = TPTab:CreateButton({
+   Name = "D-Village 2",
+   Callback = function()
+                            local teleport_table = {
+        location1 = Vector3.new(-536.9598388671875, 94.80488586425781, 923.2998046875)
+    }
+    
+    local tween_s = game:GetService('TweenService')
+    local tweeninfo = TweenInfo.new(1,Enum.EasingStyle.Linear)
+    
+    local lp = game.Players.LocalPlayer
+    
+    function bypass_teleport(v)
+        if lp.Character and
+            lp.Character:FindFirstChild('HumanoidRootPart') then
+            local cf = CFrame.new(v)
+            local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+            a:Play()
+            a.Completed:Wait()
+            print('Teleported to Sphere Location!')
+        end
+    end
+    
+    bypass_teleport(teleport_table.location1)
+   end,
+})
+
+local Button12 = TPTab:CreateButton({
+   Name = "Desert Temple",
+   Callback = function()
+                            local teleport_table = {
+        location1 = Vector3.new("-1856.0069580078125, 80.99996948242188, 332.43890380859375")
+    }
+    
+    local tween_s = game:GetService('TweenService')
+    local tweeninfo = TweenInfo.new(1,Enum.EasingStyle.Linear)
+    
+    local lp = game.Players.LocalPlayer
+    
+    function bypass_teleport(v)
+        if lp.Character and
+            lp.Character:FindFirstChild('HumanoidRootPart') then
+            local cf = CFrame.new(v)
+            local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+            a:Play()
+            a.Completed:Wait()
+            print('Teleported to Sphere Location!')
+        end
+    end
+    
+    bypass_teleport(teleport_table.location1)
+   end,
+})
+
+local Button13 = TPTab:CreateButton({
+   Name = "Warlord Path",
+   Callback = function()
+                            local teleport_table = {
+        location1 = Vector3.new("1517.974365234375, 80.75044250488281, -730.746826171875")
+    }
+    
+    local tween_s = game:GetService('TweenService')
+    local tweeninfo = TweenInfo.new(1,Enum.EasingStyle.Linear)
+    
+    local lp = game.Players.LocalPlayer
+    
+    function bypass_teleport(v)
+        if lp.Character and
+            lp.Character:FindFirstChild('HumanoidRootPart') then
+            local cf = CFrame.new(v)
+            local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+            a:Play()
+            a.Completed:Wait()
+            print('Teleported to Sphere Location!')
+        end
+    end
+    
+    bypass_teleport(teleport_table.location1)
+   end,
+})
+
+local Button14 = TPTab:CreateButton({
+   Name = "Karin Tower",
+   Callback = function()
+                            local teleport_table = {
+        location1 = Vector3.new("1113.0421142578125, 1036.75048828125, -700.0590209960938")
+    }
+    
+    local tween_s = game:GetService('TweenService')
+    local tweeninfo = TweenInfo.new(1,Enum.EasingStyle.Linear)
+    
+    local lp = game.Players.LocalPlayer
+    
+    function bypass_teleport(v)
+        if lp.Character and
+            lp.Character:FindFirstChild('HumanoidRootPart') then
+            local cf = CFrame.new(v)
+            local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+            a:Play()
+            a.Completed:Wait()
+            print('Teleported to Sphere Location!')
+        end
+    end
+    
+    bypass_teleport(teleport_table.location1)
+   end,
+})
+
+local Button15 = TPTab:CreateButton({
+   Name = "Tundra 1",
+   Callback = function()
+                            local teleport_table = {
+        location1 = Vector3.new("1288.6363525390625, 67.85041809082031, -1705.1533203125")
+    }
+    
+    local tween_s = game:GetService('TweenService')
+    local tweeninfo = TweenInfo.new(1,Enum.EasingStyle.Linear)
+    
+    local lp = game.Players.LocalPlayer
+    
+    function bypass_teleport(v)
+        if lp.Character and
+            lp.Character:FindFirstChild('HumanoidRootPart') then
+            local cf = CFrame.new(v)
+            local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+            a:Play()
+            a.Completed:Wait()
+            print('Teleported to Sphere Location!')
+        end
+    end
+    
+    bypass_teleport(teleport_table.location1)
+   end,
+})
+
+local Button16 = TPTab:CreateButton({
+   Name = "Tundra 2",
+   Callback = function()
+                            local teleport_table = {
+        location1 = Vector3.new("1553.257568359375, 81.75041961669922, -1784.6514892578125")
+    }
+    
+    local tween_s = game:GetService('TweenService')
+    local tweeninfo = TweenInfo.new(1,Enum.EasingStyle.Linear)
+    
+    local lp = game.Players.LocalPlayer
+    
+    function bypass_teleport(v)
+        if lp.Character and
+            lp.Character:FindFirstChild('HumanoidRootPart') then
+            local cf = CFrame.new(v)
+            local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+            a:Play()
+            a.Completed:Wait()
+            print('Teleported to Sphere Location!')
+        end
+    end
+    
+    bypass_teleport(teleport_table.location1)
+   end,
+})
+
+local Button17 = TPTab:CreateButton({
+   Name = "Tundra 3",
+   Callback = function()
+                            local teleport_table = {
+        location1 = Vector3.new("1557.0467529296875, 89.75039672851562, -1978.49755859375")
+    }
+    
+    local tween_s = game:GetService('TweenService')
+    local tweeninfo = TweenInfo.new(1,Enum.EasingStyle.Linear)
+    
+    local lp = game.Players.LocalPlayer
+    
+    function bypass_teleport(v)
+        if lp.Character and
+            lp.Character:FindFirstChild('HumanoidRootPart') then
+            local cf = CFrame.new(v)
+            local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+            a:Play()
+            a.Completed:Wait()
+            print('Teleported to Sphere Location!')
+        end
+    end
+    
+    bypass_teleport(teleport_table.location1)
+   end,
+})
+
+local Button18 = TPTab:CreateButton({
+   Name = "Tundra Pillars",
+   Callback = function()
+                            local teleport_table = {
+        location1 = Vector3.new("1320.510009765625, 232.2504119873047, -3245.492919921875")
+    }
+    
+    local tween_s = game:GetService('TweenService')
+    local tweeninfo = TweenInfo.new(1,Enum.EasingStyle.Linear)
+    
+    local lp = game.Players.LocalPlayer
+    
+    function bypass_teleport(v)
+        if lp.Character and
+            lp.Character:FindFirstChild('HumanoidRootPart') then
+            local cf = CFrame.new(v)
+            local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+            a:Play()
+            a.Completed:Wait()
+            print('Teleported to Sphere Location!')
+        end
+    end
+    
+    bypass_teleport(teleport_table.location1)
+   end,
+})
+
+local Button19 = TPTab:CreateButton({
+   Name = "Tundra Village Gate",
+   Callback = function()
+                            local teleport_table = {
+        location1 = Vector3.new("1234.63330078125, 230.75042724609375, -3827.71240234375")
+    }
+    
+    local tween_s = game:GetService('TweenService')
+    local tweeninfo = TweenInfo.new(1,Enum.EasingStyle.Linear)
+    
+    local lp = game.Players.LocalPlayer
+    
+    function bypass_teleport(v)
+        if lp.Character and
+            lp.Character:FindFirstChild('HumanoidRootPart') then
+            local cf = CFrame.new(v)
+            local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+            a:Play()
+            a.Completed:Wait()
+            print('Teleported to Sphere Location!')
+        end
+    end
+    
+    bypass_teleport(teleport_table.location1)
+   end,
+})
+
+local Button20 = TPTab:CreateButton({
+   Name = "TV-House 1",
+   Callback = function()
+                            local teleport_table = {
+        location1 = Vector3.new("1490.107666015625, 260.8116455078125, -3738.87646484375")
+    }
+    
+    local tween_s = game:GetService('TweenService')
+    local tweeninfo = TweenInfo.new(1,Enum.EasingStyle.Linear)
+    
+    local lp = game.Players.LocalPlayer
+    
+    function bypass_teleport(v)
+        if lp.Character and
+            lp.Character:FindFirstChild('HumanoidRootPart') then
+            local cf = CFrame.new(v)
+            local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+            a:Play()
+            a.Completed:Wait()
+            print('Teleported to Sphere Location!')
+        end
+    end
+    
+    bypass_teleport(teleport_table.location1)
+   end,
+})
+
+local Button21 = TPTab:CreateButton({
+   Name = "TV-House 2",
+   Callback = function()
+                            local teleport_table = {
+        location1 = Vector3.new("1538.8594970703125, 262.22515869140625, -4026.8359375")
+    }
+    
+    local tween_s = game:GetService('TweenService')
+    local tweeninfo = TweenInfo.new(1,Enum.EasingStyle.Linear)
+    
+    local lp = game.Players.LocalPlayer
+    
+    function bypass_teleport(v)
+        if lp.Character and
+            lp.Character:FindFirstChild('HumanoidRootPart') then
+            local cf = CFrame.new(v)
+            local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+            a:Play()
+            a.Completed:Wait()
+            print('Teleported to Sphere Location!')
+        end
+    end
+    
+    bypass_teleport(teleport_table.location1)
+   end,
+})
+
+local Button22 = TPTab:CreateButton({
+   Name = "Parkour 1",
+   Callback = function()
+                            local teleport_table = {
+        location1 = Vector3.new("646.196044921875, 199.2503662109375, -3809.725341796875")
+    }
+    
+    local tween_s = game:GetService('TweenService')
+    local tweeninfo = TweenInfo.new(1,Enum.EasingStyle.Linear)
+    
+    local lp = game.Players.LocalPlayer
+    
+    function bypass_teleport(v)
+        if lp.Character and
+            lp.Character:FindFirstChild('HumanoidRootPart') then
+            local cf = CFrame.new(v)
+            local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+            a:Play()
+            a.Completed:Wait()
+            print('Teleported to Sphere Location!')
+        end
+    end
+    
+    bypass_teleport(teleport_table.location1)
+   end,
+})
+
+local Button23 = TPTab:CreateButton({
+   Name = "Parkour 2",
+   Callback = function()
+                            local teleport_table = {
+        location1 = Vector3.new("549.8706665039062, 207.75042724609375, -3741.298095703125")
+    }
+    
+    local tween_s = game:GetService('TweenService')
+    local tweeninfo = TweenInfo.new(1,Enum.EasingStyle.Linear)
+    
+    local lp = game.Players.LocalPlayer
+    
+    function bypass_teleport(v)
+        if lp.Character and
+            lp.Character:FindFirstChild('HumanoidRootPart') then
+            local cf = CFrame.new(v)
+            local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+            a:Play()
+            a.Completed:Wait()
+            print('Teleported to Sphere Location!')
+        end
+    end
+    
+    bypass_teleport(teleport_table.location1)
+   end,
+})
+
+local Button24 = TPTab:CreateButton({
+   Name = "Parkour 3",
+   Callback = function()
+                            local teleport_table = {
+        location1 = Vector3.new("628.1985473632812, 205.7503662109375, -3623.319580078125")
+    }
+    
+    local tween_s = game:GetService('TweenService')
+    local tweeninfo = TweenInfo.new(1,Enum.EasingStyle.Linear)
+    
+    local lp = game.Players.LocalPlayer
+    
+    function bypass_teleport(v)
+        if lp.Character and
+            lp.Character:FindFirstChild('HumanoidRootPart') then
+            local cf = CFrame.new(v)
+            local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+            a:Play()
+            a.Completed:Wait()
+            print('Teleported to Sphere Location!')
+        end
+    end
+    
+    bypass_teleport(teleport_table.location1)
+   end,
+})
+
+local Button25 = TPTab:CreateButton({
+   Name = "SECRET TOWER TEMPLE!",
+   Callback = function()
+                            local teleport_table = {
+        location1 = Vector3.new("1256.4697265625, 2036.7501220703125, -666.2107543945312")
+    }
+    
+    local tween_s = game:GetService('TweenService')
+    local tweeninfo = TweenInfo.new(1,Enum.EasingStyle.Linear)
+    
+    local lp = game.Players.LocalPlayer
+    
+    function bypass_teleport(v)
+        if lp.Character and
+            lp.Character:FindFirstChild('HumanoidRootPart') then
+            local cf = CFrame.new(v)
+            local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+            a:Play()
+            a.Completed:Wait()
+            print('Teleported to Sphere Location!')
+        end
+    end
+    
+    bypass_teleport(teleport_table.location1)
+   end,
+})
