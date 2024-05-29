@@ -1,0 +1,37 @@
+// Infinite Stats Script for Clover: Retribution
+
+// Get the player object
+local player = game.Players.LocalPlayer;
+
+// Set the stats to infinite
+while true do
+// Health
+player.Character.Humanoid.Health = math.huge;
+
+// Stamina
+player.Character.Stamina.Value = math.huge;
+
+// Mana
+player.Character.Mana.Value = math.huge;
+
+// Strength
+player.Character.Strength.Value = math.huge;
+
+// Agility
+player.Character.Agility.Value = math.huge;
+
+// Intelligence
+player.Character.Intelligence.Value = math.huge;
+
+// Defense
+player.Character.Defense.Value = math.huge;
+
+// Speed
+player.Character.Humanoid.WalkSpeed = math.huge;
+
+// Jump Power
+player.Character.Humanoid.JumpPower = math.huge;
+
+// Wait for a short period of time before updating again
+wait(0.1);
+end
