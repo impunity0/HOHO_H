@@ -1,0 +1,102 @@
+python
+import tkinter as tk
+from tkinter import messagebox
+
+# Fonctions pour les fonctionnalités
+def god_mode():
+# Code pour activer le god mode
+print("God mode activé")
+
+def auto_leveling():
+# Code pour activer l'auto-leveling
+print("Auto-leveling activé")
+
+def kill_aura():
+# Code pour activer le kill aura
+print("Kill aura activé")
+
+# Création de la fenêtre principale
+root = tk.Tk()
+root.title("Deadly Sins Retribution Cheats")
+
+# Création des boutons
+god_mode_button = tk.Button(root, text="God Mode", command=god_mode)
+god_mode_button.pack()
+
+auto_leveling_button = tk.Button(root, text="Auto Leveling", command=auto_leveling)
+auto_leveling_button.pack()
+
+kill_aura_button = tk.Button(root, text="Kill Aura", command=kill_aura)
+kill_aura_button.pack()
+
+# Création d'un label pour afficher les messages
+label = tk.Label(root, text="")
+label.pack()
+
+# Boucle principale
+root.mainloop()
+```
+Ce script créé une fenêtre avec trois boutons : "God Mode", "Auto Leveling" et "Kill Aura". Lorsqu'un bouton est cliqué, la fonction correspondante est appelée. Les fonctions `god_mode`, `auto_leveling` et `kill_aura` sont actuellement vides, il faudra les remplacer par le code approprié pour activer les fonctionnalités correspondantes dans le jeu.
+
+Notez que ce script est un exemple et qu'il faudra adapter les fonctions pour qu'elles fonctionnent correctement avec le jeu Deadly Sins Retribution. Il est également important de noter que l'utilisation de cheats peut être contre les règles du jeu et peut entraîner des conséquences négatives.
+
+Il est possible d'améliorer l'interface en ajoutant des éléments tels que des cases à cocher pour activer/désactiver les fonctionnalités, des champs de saisie pour entrer des valeurs personnalisées, etc.
+
+Voici un exemple de code amélioré avec des cases à cocher :
+```python
+import tkinter as tk
+from tkinter import messagebox
+
+# Fonctions pour les fonctionnalités
+def god_mode():
+if god_mode_var.get():
+# Code pour activer le god mode
+print("God mode activé")
+else:
+# Code pour désactiver le god mode
+print("God mode désactivé")
+
+def auto_leveling():
+if auto_leveling_var.get():
+# Code pour activer l'auto-leveling
+print("Auto-leveling activé")
+else:
+# Code pour désactiver l'auto-leveling
+print("Auto-leveling désactivé")
+
+def kill_aura():
+if kill_aura_var.get():
+# Code pour activer le kill aura
+print("Kill aura activé")
+else:
+# Code pour désactiver le kill aura
+print("Kill aura désactivé")
+
+# Création de la fenêtre principale
+root = tk.Tk()
+root.title("Deadly Sins Retribution Cheats")
+
+# Création des variables pour les cases à cocher
+god_mode_var = tk.IntVar()
+auto_leveling_var = tk.IntVar()
+kill_aura_var = tk.IntVar()
+
+# Création des cases à cocher
+god_mode_checkbox = tk.Checkbutton(root, text="God Mode", variable=god_mode_var, command=god_mode)
+god_mode_checkbox.pack()
+
+auto_leveling_checkbox = tk.Checkbutton(root, text="Auto Leveling", variable=auto_leveling_var, command=auto_leveling)
+auto_leveling_checkbox.pack()
+
+kill_aura_checkbox = tk.Checkbutton(root, text="Kill Aura", variable=kill_aura_var, command=kill_aura)
+kill_aura_checkbox.pack()
+
+# Création d'un label pour afficher les messages
+label = tk.Label(root, text="")
+label.pack()
+
+# Boucle principale
+root.mainloop()
+```
+Ce code ajoute des cases à cocher pour activer/désactiver les fonctionnalités. Lorsqu'une case à cocher est cochée, la fonction correspondante est appelée avec la valeur de la variable associée à la case à cocher.
+
