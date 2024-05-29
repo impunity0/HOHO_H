@@ -1,0 +1,31 @@
+```lua
+-- Race and Magic Cheat Script for Deadly Sins Retribution
+
+-- Set the desired race (replace "Human" with the race you want)
+local desiredRace = "Reaper"
+
+-- Set the desired magic (replace "Fire" with the magic you want)
+local desiredMagic = "Infinity"
+
+-- Get the player character
+local player = game:GetService("Players").LocalPlayer.Character
+
+-- Get the race and magic stats
+local raceStat = player:FindFirstChild("Race")
+local magicStat = player:FindFirstChild("Magic")
+
+-- Check if the stats exist
+if raceStat and magicStat then
+    -- Set the race
+    raceStat.Value = desiredRace
+
+    -- Set the magic
+    magicStat.Value = desiredMagic
+
+    -- Print a success message
+    print("Race and magic changed successfully!")
+else
+    -- Print an error message if the stats don't exist
+    print("Error: Unable to find race and magic stats.")
+end
+```
