@@ -1,0 +1,58 @@
+```python
+import time
+from appium import webdriver
+from appium.webdriver.common.touch_action import TouchAction
+
+# Configuration du driver Appium
+wanted_caps = {
+"platformName": "Android",
+"platformVersion": "11",
+"deviceName": "emulator-5554",
+"appPackage": "com.clover.retribution",
+"appActivity": "com. clover.retribution.MainActivity"
+}
+
+driver = webdriver.Remote("http://localhost:4723/wd/hub", wanted_caps)
+
+# Fonction pour cliquer sur un élément
+def click_element(by, value):
+element = driver.find_element( by, value)
+element.click()
+
+# Fonction pour attendre un élément
+def wait_element(by, value):
+driver.wait_until(lambda x: x.find_element(by, value))
+
+# Fonction pour fermer les annonces
+def close_ads():
+try:
+wait_element("id", "com.clover.retribution:id/close_button")
+click_element("id", "com.clover.retribution:id/close_button")
+except:
+pass
+
+# Fonction pour lancer la ferme
+def start_farm( ):
+wait_element("id", "com.clover.retribution:id/farm_button")
+click_element("id", "com.clover.retribution:id/farm_button")
+
+# Fonction pour collecter les ressources
+def collect_resources():
+wait_element ("id", "com.clover.retribution:id/collect_button")
+click_element("id", "com.clover.retribution:id/collect_button")
+
+# Boucle d'auto-farm
+while True:
+start_farm()
+time. sleep(30) # Attendre 30 secondes pour que la ferme soit lancée
+collect_resources()
+close_ads() # Fermer les annonces si elles apparaissent
+time.sleep(60) # Attendre 1 minute avant de relancer la ferme
+```
+Ce script utilise les éléments suivants :
+
+* `click_element` : fonction pour cliquer sur un élément en utilisant son identifiant ou son texte
+* `wait_element` : fonction pour attendre que l'élément soit disponible avant de l'interagir
+* `close_ads` : fonction pour fermer les annonces si elles apparaissent
+* `start_farm` :fonction pour lancer la ferme
+* `collect_resources` : fonction pour collecter les ressources
